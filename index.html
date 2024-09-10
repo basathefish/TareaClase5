@@ -110,16 +110,18 @@
         <div id="contact" class="tab-pane fade" role="tabpanel" aria-labelledby="contact-tab">
             <section class="container mt-4">
                 <h2 class="text-center mb-4">Contacto</h2>
-                <form>
+                <form id="FormularioContacto">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required
                             aria-required="true" aria-label="Ingrese su nombre">
+                        <span class="error-message" id="nombre-error"></span>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Correo Electrónico</label>
                         <input type="email" class="form-control" id="email" placeholder="Tu Correo Electrónico" required
                             aria-required="true" aria-label="Ingrese su correo electrónico">
+                        <span class="error-message" id="email-error"></span>
                     </div>
                     <div class="mb-3">
                         <label for="mensaje" class="form-label">Mensaje</label>
@@ -128,6 +130,8 @@
                     </div>
                     <button type="submit" class="btn btn-primary" aria-label="Enviar formulario">Enviar</button>
                 </form>
+                <!-- informante para los lectores de pantalla -->
+                <div id="statusMessage" aria-live="polite" aria-atomic="true" class="visually-hidden"></div>
             </section>
         </div>
     </div>

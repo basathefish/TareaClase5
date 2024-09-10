@@ -115,3 +115,41 @@ body {
 .footer a:hover {
     color: #ccc;
 }
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.confirmacion {
+    position: fixed;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
